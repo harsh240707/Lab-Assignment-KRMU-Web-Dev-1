@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  "SF Pro Display", "SF Pro Text", 
+      "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #0b4192;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+header h1 {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+#about {
+  text-align: center;
+  padding: 1px 20px;
+}
+
+.profile-img {       
+  height: 400px;       
+  border-radius: 50%;  
+  object-fit: cover;
+  width: 400px;
+  margin-bottom: 15px;
+}
+
+#about p {
+  margin-top: 10px;
+  color: #696969;
+}
+
+/* Skills Section */
+#skills {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #0d47a1;
+  padding: 10px;
+}
+
+th {
+  background-color: #0d47a1;
+  color: white;
+}
+
+/* Projects Section */
+#projects {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.project {
+  background: white;
+  border: 1px solid #ddd;
+  width: 60%;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.project h3 {
+  color: #0d47a1;
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #0d47a1;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #083b8c;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0d47a1;
+}
+
+.back-top {
+  display: inline-block;
+  background-color: #083b8c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.back-top:hover {
+  background-color: #052c6f;
+}
+
+</style>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\4F6FFE13A5D75B2D6A3923922B3922E5\WhatsApp Image 2025-11-08 at 00.31.36_2d23870f.jpg" alt="Profile Picture" class="profile-img">
+    <p>Hello! My name is Harsh Yadav. I am learning web development and this is my first portfolio website.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <table>
+      <tr>
+        <th>Skill</th>
+        <th>Level</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Beginner</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Beginner</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Learning</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>A simple HTML & CSS webpage.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Another awesome mini project.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name">
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email">
+      <label>Message:</label>
+      <textarea placeholder="Write your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <a href="#top" class="back-top">↑ Back to Top</a>
+  </footer>
+
+</body>
+</html>
+
